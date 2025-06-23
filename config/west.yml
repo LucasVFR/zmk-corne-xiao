@@ -9,11 +9,10 @@ manifest:
       import: app/west.yml
   self:
     path: config
-    west-commands: scripts/west-commands.yml
 
 extensions:
-  - name: config
+  - name: local_config
     path: config
     build:
       board-roots:
-        - config/boards
+        - boards/shields
